@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import Header from './components/Header/Header'
-import "./App.css"
+import Layout from './components/Layout/Layout'
 
 function App() {
 
@@ -8,7 +7,7 @@ function App() {
   return (
     <main className="app">
       <div className="app-container">
-        <Header />
+        <Layout />
       </div>
     </main>
   )
