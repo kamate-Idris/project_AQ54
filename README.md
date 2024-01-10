@@ -13,7 +13,7 @@ quantité de particules fines dans l’air.
 - Consulter un temps réel ou en différé les données
 
 
-### Prerequits pour utiliser cette application
+### Prerequits 
 - Avoir Docker installer sur son systeme ou l'installer via [ce lien](https://docker.com/get-started)
 - Avoir git d'installer 
 
