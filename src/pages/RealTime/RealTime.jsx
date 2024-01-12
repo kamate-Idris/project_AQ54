@@ -7,8 +7,6 @@ const RealTime = () => {
     const [firstSensor, setFirstSensor] = useState([])
     const [secondSensor, setSecondSensor] = useState([])
 
-
-
     /**
      * Recuperer les donnees d'un capteur
      * @param {string} sensor 
@@ -33,8 +31,7 @@ const RealTime = () => {
             fetchSensorDataAsync("SMART189");
         }, 5000)
         return () => clearInterval(interval)
-    }, [firstSensor, secondSensor]);
-
+    }, []);
 
 
 

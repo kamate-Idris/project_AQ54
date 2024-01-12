@@ -1,4 +1,5 @@
 /**
+ * Fonction definissant URL de base de l'API
  * 
  * @param {string} url 
  * @returns 

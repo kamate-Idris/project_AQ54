@@ -2,8 +2,11 @@ import React from 'react'
 import "./Layout.css"
 import { Outlet, Link  } from "react-router-dom"
 
+/**
+ * Header for every pages
+ * @returns 
+ */
 const Header = () => {
-
     return (
         <>
             <header className='header'>
@@ -25,7 +28,7 @@ const Header = () => {
                     </aside>
                 </article>
             </header>
-            <article className="content">
+            <article className="body">
                 <Outlet />
             </article>
 

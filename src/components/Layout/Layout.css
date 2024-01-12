@@ -73,7 +73,8 @@
     border-radius: 20px;
 }
 
-.content {
+.body {
     background-color: aliceblue;
     padding: 10px 0;
+    height: calc(100vh - 54px);
 }

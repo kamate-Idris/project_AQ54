@@ -1,7 +1,14 @@
+import { useState } from "react"
 import "./Table.css"
+import { useEffect } from "react"
 const Table = ({ stationInfo }) => {
 
-    const station_data = Object.values(stationInfo['values'])
+    const [stationData, setStationData] = useState(Object.values(stationInfo['values']))
+
+    // Mettre a jour l'etat si les donnees changent
+    useEffect(() => {
+        setStationData(Object.values(stationInfo['values']))
+    }, [stationInfo])
 
     return (
         <div>
@@ -15,11 +22,13 @@ const Table = ({ stationInfo }) => {
                     </tr>
                 </thead>
                 <tbody className="tbody">
-                    {station_data.map((sensorData, index) => (
+                    {stationData.map((sensorData, index) => (
                         <tr key={index} className="tr">
                             <td>{sensorData['sensor']}</td>
                             <td>{sensorData['unit']}</td>
-                            <td>{sensorData['value'].toFixed(2)}</td>
+                            <td>{sensorData['value'].toFixed(2)}
+                                {/* <span className={`${sensorData['value'] > sensorData[index - 1]?.value? "up" : "down"}`}> i</span> */}
+                            </td>
                         </tr>
                     ))}
                 </tbody>
