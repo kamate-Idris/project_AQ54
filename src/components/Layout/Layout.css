@@ -17,20 +17,16 @@
 }
 
 .logo {
-    width: 20px;
-    height: 20px;
+    
     cursor: pointer;
     object-fit: contain;
     border-right: 1px solid black;
-    padding-right: 40px;
+    padding-right: 20px;
+    font-weight: 900;
+    color: orange;
 
 }
 
-
-.logo img {
-    width: 20px;
-    height: 20px;
-}
 
 
 

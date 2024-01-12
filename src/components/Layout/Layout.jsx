@@ -9,7 +9,7 @@ const Header = () => {
             <header className='header'>
                 <article className="header-container">
                     <aside className="header-left">
-                        <span className="logo"><img src="/img/logo.png" alt="Image du logo" /></span>
+                        <span className="logo">AQ54</span>
                         <ul className='header-left-items'>
                             <Link className='header-left-item' to="/">Temps réel</Link>
                             <Link className='header-left-item' to="/differTime">Temps différé</Link>

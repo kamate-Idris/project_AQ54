@@ -1,0 +1,43 @@
+.station-name {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.table{
+    width: 100%;
+    border: 1px solid black;
+    background-color: #FFF;
+}
+.tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(209, 205, 205);
+}
+
+thead .tr {
+    background-color: rgb(95, 135, 255);
+}
+
+
+tbody tr:nth-child(2n) {
+    background-color: #eceaea;
+}
+
+tbody tr:hover{
+    background-color: #f1ecec;
+    cursor: pointer;
+}
+
+ tbody .tr:last-child {
+    border: none;
+}
+
+th, td {
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+
+
