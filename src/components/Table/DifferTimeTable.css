@@ -2,6 +2,12 @@
     border-spacing:  0 !important;
 }
 
-.differ-time-table tr {
+.differ-time-table .thead tr {
      background-color: rgb(245, 194, 99);
+}
+
+.differ-time-table tbody tr {
+    padding: 5px;
+    font-size: 16px;
+
 }

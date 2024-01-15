@@ -10,7 +10,8 @@ quantité de particules fines dans l’air.
 
     - SMART189
 ### Fonctionnalites
-- Consulter un temps réel ou en différé les données
+- Consulter en temps réel(chaque 5 secondes) les données des deux capteurs
+- Consulter en fonction d'une date les données d'un capteur spécifique
 
 
 ### Prerequits 
@@ -25,10 +26,6 @@ quantité de particules fines dans l’air.
 
 **3-** Lancer le conteneur sur le port 3000```docker run -p 3000:3000 nom_de_votre_image```
 
-
-### Configuration
-
-### Ulitisation ou comment ca marche
 
 ### Kamate Drissa
 
