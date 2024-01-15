@@ -3,10 +3,11 @@
     margin-bottom: 2px;
 }
 
-.table{
+.real-time-table{
     width: 500px;
     border: 1px solid black;
     background-color: #FFF;
+    border-spacing: 0 !important;
 }
 .tr {
     width: 100%;

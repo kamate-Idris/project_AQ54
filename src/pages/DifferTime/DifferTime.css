@@ -1,3 +1,37 @@
 .differ {
     padding: 10px;
+
 }
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputs input, .inputs .btn{
+    border: 1px solid  rgb(233, 229, 230);
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.inputs input {
+    width: 300px;
+}
+
+.inputs .btn {
+    cursor: pointer;
+}
+
+.empty {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.display-data {
+    margin-top: 20px;
+    border: 1px solid black;
+    background: #FFF;
+}
+

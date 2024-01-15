@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import RealTime from "./pages/RealTime/RealTime";
 import DifferTime from "./pages/DifferTime/DifferTime";
 import Layout from "./components/Layout/Layout";
+import Historic from "./pages/Historic/Historic";
 
 export const router = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([
                 path : "/differTime",
                 element : <DifferTime />
             },
+            {
+                path : "/historic",
+                element : <Historic />
+            }
         ]
     }
  

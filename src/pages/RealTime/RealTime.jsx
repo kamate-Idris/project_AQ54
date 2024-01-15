@@ -1,14 +1,15 @@
 import "./RealTime.css"
 import { useEffect, useState } from 'react';
 import { baseURl } from '../../utils';
-import Table from "../../components/Table/Table";
+
+import RealTimeTable from "../../components/Table/RealTimeTable";
 
 const RealTime = () => {
     const [firstSensor, setFirstSensor] = useState([])
     const [secondSensor, setSecondSensor] = useState([])
 
     /**
-     * Recuperer les donnees d'un capteur
+     * Fonction pour recuperer les donnees des capteurs
      * @param {string} sensor 
      */
     const fetchSensorDataAsync = async (sensor) => {
@@ -24,7 +25,7 @@ const RealTime = () => {
         }
     };
 
-    // faire un fetch tout les 5s pour afficher les donnees en temps reel
+    // Appel de la fonction de recuperation des donnnees des capteurs chaque 5 s
     useEffect(() => {
         const interval = setInterval(() => {
             fetchSensorDataAsync("SMART188");
@@ -39,8 +40,8 @@ const RealTime = () => {
         firstSensor &&
         <div className="realtime">
             <div className="realtime-container">
-                <Table stationInfo={firstSensor} />
-                <Table stationInfo={secondSensor} />
+                <RealTimeTable stationInfo={firstSensor} />
+                <RealTimeTable stationInfo={secondSensor} />
             </div>
         </div>
     )
