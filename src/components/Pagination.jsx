@@ -1,5 +1,5 @@
 import ReactJsPagination from 'react-js-pagination';
-
+import "./Pagination.css"
 const Pagination = ({ currentPage, itemsPerPage, totalItems,handlePageChange }) => {
     return (
         <div className="pagination-container">

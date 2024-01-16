@@ -1,0 +1,25 @@
+.pagination {
+    list-style: none;
+    display: flex;
+    padding-left: 10px;
+    .page-item {
+        padding: 5px;
+        border: 1px solid #f8eeee;
+        display: flex;
+        align-items: center;
+        .page-link {
+            text-decoration: none;
+        }
+
+        &.active {
+            background-color: #0969da;
+            border: none;
+            font-weight: 500;
+        }
+
+        &.active .page-link {
+            color: #FFF;
+        }
+    }
+
+}
